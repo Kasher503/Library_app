@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useRef } from "react";
 import {
   motion,
   useAnimationFrame,
@@ -7,8 +7,19 @@ import {
   useMotionValue,
   useTransform,
 } from "framer-motion";
-import { useRef } from "react";
 import { cn } from "../../../lib/utils";
+
+// Define the props for the Button component
+interface ButtonProps {
+  borderRadius?: string;
+  children: React.ReactNode; // Specify that children must be React nodes
+  as?: React.ElementType; // Allow for any React element type
+  containerClassName?: string;
+  borderClassName?: string;
+  duration?: number;
+  className?: string;
+  [key: string]: any; // For additional props
+}
 
 export function Button({
   borderRadius = "1.75rem",
@@ -19,26 +30,29 @@ export function Button({
   duration,
   className,
   ...otherProps
-}) {
+}: ButtonProps) {
   return (
-    (<Component
+    <Component
       className={cn(
-        "bg-transparent relative text-xl  h-12 w-28 p-[1px] overflow-hidden ",
+        "bg-transparent relative text-xl h-12 w-28 p-[1px] overflow-hidden",
         containerClassName
       )}
       style={{
         borderRadius: borderRadius,
       }}
-      {...otherProps}>
+      {...otherProps}
+    >
       <div
         className="absolute inset-0"
-        style={{ borderRadius: `calc(${borderRadius} * 0.96)` }}>
+        style={{ borderRadius: `calc(${borderRadius} * 0.96)` }}
+      >
         <MovingBorder duration={duration} rx="30%" ry="30%">
           <div
             className={cn(
               "h-20 w-20 opacity-[0.8] bg-[radial-gradient(var(--sky-500)_40%,transparent_60%)]",
               borderClassName
-            )} />
+            )}
+          />
         </MovingBorder>
       </div>
       <div
@@ -48,11 +62,21 @@ export function Button({
         )}
         style={{
           borderRadius: `calc(${borderRadius} * 0.96)`,
-        }}>
+        }}
+      >
         {children}
       </div>
-    </Component>)
+    </Component>
   );
+}
+
+// Define the props for the MovingBorder component
+interface MovingBorderProps {
+  children: React.ReactNode; // Specify that children must be React nodes
+  duration?: number;
+  rx: string;
+  ry: string;
+  [key: string]: any; // For additional props
 }
 
 export const MovingBorder = ({
@@ -61,8 +85,8 @@ export const MovingBorder = ({
   rx,
   ry,
   ...otherProps
-}) => {
-  const pathRef = useRef();
+}: MovingBorderProps) => {
+  const pathRef = useRef<SVGRectElement | null>(null);
   const progress = useMotionValue(0);
 
   useAnimationFrame((time) => {
@@ -78,25 +102,29 @@ export const MovingBorder = ({
 
   const transform = useMotionTemplate`translateX(${x}px) translateY(${y}px) translateX(-50%) translateY(-50%)`;
 
-  return (<>
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      preserveAspectRatio="none"
-      className="absolute w-full h-full"
-      width="100%"
-      height="100%"
-      {...otherProps}>
-      <rect fill="none" width="100%" height="100%" rx={rx} ry={ry} ref={pathRef} />
-    </svg>
-    <motion.div
-      style={{
-        position: "absolute",
-        top: 0,
-        left: 0,
-        display: "inline-block",
-        transform,
-      }}>
-      {children}
-    </motion.div>
-  </>);
+  return (
+    <>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        preserveAspectRatio="none"
+        className="absolute w-full h-full"
+        width="100%"
+        height="100%"
+        {...otherProps}
+      >
+        <rect fill="none" width="100%" height="100%" rx={rx} ry={ry} ref={pathRef} />
+      </svg>
+      <motion.div
+        style={{
+          position: "absolute",
+          top: 0,
+          left: 0,
+          display: "inline-block",
+          transform,
+        }}
+      >
+        {children}
+      </motion.div>
+    </>
+  );
 };
