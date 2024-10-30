@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+@layer components {
+    .bannerIcon {
+        @apply inline-flex items-center justify-center w-16 h-16 text-xl text-gray-200 transition-all duration-300 bg-black bg-opacity-25 rounded-md cursor-pointer shadow-shadowOne hover:bg-opacity-40 hover:-translate-y-1 hover:text-designColor;
+    }
+    .shadow-shadowOne {
+        @apply shadow-lg; /* Use an existing Tailwind shadow utility or define a custom one */
+    }
+    .text-designColor {
+        color: #FF5733; /* Replace with your custom color */
+    }
+}
