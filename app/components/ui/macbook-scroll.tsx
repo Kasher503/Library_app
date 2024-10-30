@@ -177,116 +177,207 @@ export const Keypad = () => {
         >
           esc
         </KBtn>
-        <KBtn>
+
+        <KBtn
+          className="your-class-name"
+          childrenClassName="your-children-class-name"
+        >
           <IconBrightnessDown className="h-[6px] w-[6px]" />
           <span className="inline-block mt-1">F1</span>
         </KBtn>
 
-        <KBtn>
+        <KBtn
+          className="flex items-center justify-center w-10 h-10 bg-blue-500 text-white rounded" // Replace with your desired styles
+          childrenClassName="flex flex-col items-center" // Replace with your desired styles for children
+        >
           <IconBrightnessUp className="h-[6px] w-[6px]" />
           <span className="inline-block mt-1">F2</span>
         </KBtn>
-        <KBtn>
+        <KBtn
+          className="flex items-center justify-center w-10 h-10 bg-blue-500 text-white rounded"
+          childrenClassName="flex flex-col items-center"
+        >
           <IconTable className="h-[6px] w-[6px]" />
           <span className="inline-block mt-1">F3</span>
         </KBtn>
-        <KBtn>
+        <KBtn
+          className="flex items-center justify-center w-10 h-10 bg-blue-500 text-white rounded"
+          childrenClassName="flex flex-col items-center"
+        >
           <IconSearch className="h-[6px] w-[6px]" />
           <span className="inline-block mt-1">F4</span>
         </KBtn>
-        <KBtn>
+        <KBtn
+          className="flex items-center justify-center w-10 h-10 bg-blue-500 text-white rounded"
+          childrenClassName="flex flex-col items-center"
+        >
           <IconMicrophone className="h-[6px] w-[6px]" />
           <span className="inline-block mt-1">F5</span>
         </KBtn>
-        <KBtn>
+        <KBtn
+          className="flex items-center justify-center w-10 h-10 bg-blue-500 text-white rounded"
+          childrenClassName="flex flex-col items-center"
+        >
           <IconMoon className="h-[6px] w-[6px]" />
           <span className="inline-block mt-1">F6</span>
         </KBtn>
-        <KBtn>
+        <KBtn
+          className="flex items-center justify-center w-10 h-10 bg-blue-500 text-white rounded"
+          childrenClassName="flex flex-col items-center"
+        >
           <IconPlayerTrackPrev className="h-[6px] w-[6px]" />
           <span className="inline-block mt-1">F7</span>
         </KBtn>
-        <KBtn>
+        <KBtn
+          className="flex items-center justify-center w-10 h-10 bg-blue-500 text-white rounded"
+          childrenClassName="flex flex-col items-center"
+        >
           <IconPlayerSkipForward className="h-[6px] w-[6px]" />
           <span className="inline-block mt-1">F8</span>
         </KBtn>
-        <KBtn>
+        <KBtn
+          className="flex items-center justify-center w-10 h-10 bg-blue-500 text-white rounded"
+          childrenClassName="flex flex-col items-center"
+        >
           <IconPlayerTrackNext className="h-[6px] w-[6px]" />
-          <span className="inline-block mt-1">F8</span>
+          <span className="inline-block mt-1">F9</span>
         </KBtn>
-        <KBtn>
+        <KBtn
+          className="flex items-center justify-center w-10 h-10 bg-blue-500 text-white rounded"
+          childrenClassName="flex flex-col items-center"
+        >
           <IconVolume3 className="h-[6px] w-[6px]" />
           <span className="inline-block mt-1">F10</span>
         </KBtn>
-        <KBtn>
+        <KBtn
+          className="flex items-center justify-center w-10 h-10 bg-blue-500 text-white rounded"
+          childrenClassName="flex flex-col items-center"
+        >
           <IconVolume2 className="h-[6px] w-[6px]" />
           <span className="inline-block mt-1">F11</span>
         </KBtn>
-        <KBtn>
+        <KBtn
+          className="flex items-center justify-center w-10 h-10 bg-blue-500 text-white rounded"
+          childrenClassName="flex flex-col items-center"
+        >
           <IconVolume className="h-[6px] w-[6px]" />
           <span className="inline-block mt-1">F12</span>
         </KBtn>
-        <KBtn>
-          <div className="h-4 w-4 rounded-full  bg-gradient-to-b from-20% from-neutral-900 via-black via-50% to-neutral-900 to-95% p-px">
+        <KBtn
+          className="flex items-center justify-center w-10 h-10 bg-blue-500 text-white rounded"
+          childrenClassName="flex flex-col items-center"
+        >
+          <div className="h-4 w-4 rounded-full bg-gradient-to-b from-20% from-neutral-900 via-black via-50% to-neutral-900 to-95% p-px">
             <div className="w-full h-full bg-black rounded-full" />
           </div>
         </KBtn>
       </Row>
       {/* Second row */}
       <Row>
-        <KBtn>
+        <KBtn
+          className="flex flex-col items-center justify-center w-10 h-10 bg-blue-500 text-white rounded" // Replace with your desired styles
+          childrenClassName="flex flex-col items-center" // Replace with your desired styles for children
+        >
           <span className="block">~</span>
           <span className="block mt-1">`</span>
         </KBtn>
 
-        <KBtn>
-          <span className="block ">!</span>
+        <KBtn
+          className="flex flex-col items-center justify-center w-10 h-10 bg-blue-500 text-white rounded"
+          childrenClassName="flex flex-col items-center"
+        >
+          <span className="block">!</span>
           <span className="block">1</span>
         </KBtn>
-        <KBtn>
+
+        <KBtn
+          className="flex flex-col items-center justify-center w-10 h-10 bg-blue-500 text-white rounded"
+          childrenClassName="flex flex-col items-center"
+        >
           <span className="block">@</span>
           <span className="block">2</span>
         </KBtn>
-        <KBtn>
+
+        <KBtn
+          className="flex flex-col items-center justify-center w-10 h-10 bg-blue-500 text-white rounded"
+          childrenClassName="flex flex-col items-center"
+        >
           <span className="block">#</span>
           <span className="block">3</span>
         </KBtn>
-        <KBtn>
+
+        <KBtn
+          className="flex flex-col items-center justify-center w-10 h-10 bg-blue-500 text-white rounded"
+          childrenClassName="flex flex-col items-center"
+        >
           <span className="block">$</span>
           <span className="block">4</span>
         </KBtn>
-        <KBtn>
+
+        <KBtn
+          className="flex flex-col items-center justify-center w-10 h-10 bg-blue-500 text-white rounded"
+          childrenClassName="flex flex-col items-center"
+        >
           <span className="block">%</span>
           <span className="block">5</span>
         </KBtn>
-        <KBtn>
+
+        <KBtn
+          className="flex flex-col items-center justify-center w-10 h-10 bg-blue-500 text-white rounded"
+          childrenClassName="flex flex-col items-center"
+        >
           <span className="block">^</span>
           <span className="block">6</span>
         </KBtn>
-        <KBtn>
+
+        <KBtn
+          className="flex flex-col items-center justify-center w-10 h-10 bg-blue-500 text-white rounded"
+          childrenClassName="flex flex-col items-center"
+        >
           <span className="block">&</span>
           <span className="block">7</span>
         </KBtn>
-        <KBtn>
+
+        <KBtn
+          className="flex flex-col items-center justify-center w-10 h-10 bg-blue-500 text-white rounded"
+          childrenClassName="flex flex-col items-center"
+        >
           <span className="block">*</span>
           <span className="block">8</span>
         </KBtn>
-        <KBtn>
+
+        <KBtn
+          className="flex flex-col items-center justify-center w-10 h-10 bg-blue-500 text-white rounded"
+          childrenClassName="flex flex-col items-center"
+        >
           <span className="block">(</span>
           <span className="block">9</span>
         </KBtn>
-        <KBtn>
+
+        <KBtn
+          className="flex flex-col items-center justify-center w-10 h-10 bg-blue-500 text-white rounded"
+          childrenClassName="flex flex-col items-center"
+        >
           <span className="block">)</span>
           <span className="block">0</span>
         </KBtn>
-        <KBtn>
+
+        <KBtn
+          className="flex flex-col items-center justify-center w-10 h-10 bg-blue-500 text-white rounded"
+          childrenClassName="flex flex-col items-center"
+        >
           <span className="block">&mdash;</span>
           <span className="block">_</span>
         </KBtn>
-        <KBtn>
+
+        <KBtn
+          className="flex flex-col items-center justify-center w-10 h-10 bg-blue-500 text-white rounded"
+          childrenClassName="flex flex-col items-center"
+        >
           <span className="block">+</span>
-          <span className="block"> = </span>
+          <span className="block">=</span>
         </KBtn>
+
         <KBtn
           className="w-10 items-end justify-end pr-[4px] pb-[2px]"
           childrenClassName="items-end"
@@ -302,46 +393,96 @@ export const Keypad = () => {
         >
           tab
         </KBtn>
-        <KBtn>
+        <KBtn
+          className="flex flex-col items-center justify-center w-10 h-10 bg-blue-500 text-white rounded" // Adjust styles as needed
+          childrenClassName="flex flex-col items-center"
+        >
           <span className="block">Q</span>
         </KBtn>
 
-        <KBtn>
+        <KBtn
+          className="flex flex-col items-center justify-center w-10 h-10 bg-blue-500 text-white rounded"
+          childrenClassName="flex flex-col items-center"
+        >
           <span className="block">W</span>
         </KBtn>
-        <KBtn>
+
+        <KBtn
+          className="flex flex-col items-center justify-center w-10 h-10 bg-blue-500 text-white rounded"
+          childrenClassName="flex flex-col items-center"
+        >
           <span className="block">E</span>
         </KBtn>
-        <KBtn>
+
+        <KBtn
+          className="flex flex-col items-center justify-center w-10 h-10 bg-blue-500 text-white rounded"
+          childrenClassName="flex flex-col items-center"
+        >
           <span className="block">R</span>
         </KBtn>
-        <KBtn>
+
+        <KBtn
+          className="flex flex-col items-center justify-center w-10 h-10 bg-blue-500 text-white rounded"
+          childrenClassName="flex flex-col items-center"
+        >
           <span className="block">T</span>
         </KBtn>
-        <KBtn>
+
+        <KBtn
+          className="flex flex-col items-center justify-center w-10 h-10 bg-blue-500 text-white rounded"
+          childrenClassName="flex flex-col items-center"
+        >
           <span className="block">Y</span>
         </KBtn>
-        <KBtn>
+
+        <KBtn
+          className="flex flex-col items-center justify-center w-10 h-10 bg-blue-500 text-white rounded"
+          childrenClassName="flex flex-col items-center"
+        >
           <span className="block">U</span>
         </KBtn>
-        <KBtn>
+
+        <KBtn
+          className="flex flex-col items-center justify-center w-10 h-10 bg-blue-500 text-white rounded"
+          childrenClassName="flex flex-col items-center"
+        >
           <span className="block">I</span>
         </KBtn>
-        <KBtn>
+
+        <KBtn
+          className="flex flex-col items-center justify-center w-10 h-10 bg-blue-500 text-white rounded"
+          childrenClassName="flex flex-col items-center"
+        >
           <span className="block">O</span>
         </KBtn>
-        <KBtn>
+
+        <KBtn
+          className="flex flex-col items-center justify-center w-10 h-10 bg-blue-500 text-white rounded"
+          childrenClassName="flex flex-col items-center"
+        >
           <span className="block">P</span>
         </KBtn>
-        <KBtn>
+
+        <KBtn
+          className="flex flex-col items-center justify-center w-10 h-10 bg-blue-500 text-white rounded"
+          childrenClassName="flex flex-col items-center"
+        >
           <span className="block">{`{`}</span>
           <span className="block">{`[`}</span>
         </KBtn>
-        <KBtn>
+
+        <KBtn
+          className="flex flex-col items-center justify-center w-10 h-10 bg-blue-500 text-white rounded"
+          childrenClassName="flex flex-col items-center"
+        >
           <span className="block">{`}`}</span>
           <span className="block">{`]`}</span>
         </KBtn>
-        <KBtn>
+
+        <KBtn
+          className="flex flex-col items-center justify-center w-10 h-10 bg-blue-500 text-white rounded"
+          childrenClassName="flex flex-col items-center"
+        >
           <span className="block">{`|`}</span>
           <span className="block">{`\\`}</span>
         </KBtn>
@@ -354,42 +495,85 @@ export const Keypad = () => {
         >
           caps lock
         </KBtn>
-        <KBtn>
+        <KBtn
+          className="flex flex-col items-center justify-center w-10 h-10 bg-blue-500 text-white rounded" // Adjust styles as needed
+          childrenClassName="flex flex-col items-center"
+        >
           <span className="block">A</span>
         </KBtn>
 
-        <KBtn>
+        <KBtn
+          className="flex flex-col items-center justify-center w-10 h-10 bg-blue-500 text-white rounded"
+          childrenClassName="flex flex-col items-center"
+        >
           <span className="block">S</span>
         </KBtn>
-        <KBtn>
+
+        <KBtn
+          className="flex flex-col items-center justify-center w-10 h-10 bg-blue-500 text-white rounded"
+          childrenClassName="flex flex-col items-center"
+        >
           <span className="block">D</span>
         </KBtn>
-        <KBtn>
+
+        <KBtn
+          className="flex flex-col items-center justify-center w-10 h-10 bg-blue-500 text-white rounded"
+          childrenClassName="flex flex-col items-center"
+        >
           <span className="block">F</span>
         </KBtn>
-        <KBtn>
+
+        <KBtn
+          className="flex flex-col items-center justify-center w-10 h-10 bg-blue-500 text-white rounded"
+          childrenClassName="flex flex-col items-center"
+        >
           <span className="block">G</span>
         </KBtn>
-        <KBtn>
+
+        <KBtn
+          className="flex flex-col items-center justify-center w-10 h-10 bg-blue-500 text-white rounded"
+          childrenClassName="flex flex-col items-center"
+        >
           <span className="block">H</span>
         </KBtn>
-        <KBtn>
+
+        <KBtn
+          className="flex flex-col items-center justify-center w-10 h-10 bg-blue-500 text-white rounded"
+          childrenClassName="flex flex-col items-center"
+        >
           <span className="block">J</span>
         </KBtn>
-        <KBtn>
+
+        <KBtn
+          className="flex flex-col items-center justify-center w-10 h-10 bg-blue-500 text-white rounded"
+          childrenClassName="flex flex-col items-center"
+        >
           <span className="block">K</span>
         </KBtn>
-        <KBtn>
+
+        <KBtn
+          className="flex flex-col items-center justify-center w-10 h-10 bg-blue-500 text-white rounded"
+          childrenClassName="flex flex-col items-center"
+        >
           <span className="block">L</span>
         </KBtn>
-        <KBtn>
+
+        <KBtn
+          className="flex flex-col items-center justify-center w-10 h-10 bg-blue-500 text-white rounded"
+          childrenClassName="flex flex-col items-center"
+        >
           <span className="block">{`:`}</span>
           <span className="block">{`;`}</span>
         </KBtn>
-        <KBtn>
+
+        <KBtn
+          className="flex flex-col items-center justify-center w-10 h-10 bg-blue-500 text-white rounded"
+          childrenClassName="flex flex-col items-center"
+        >
           <span className="block">{`"`}</span>
           <span className="block">{`'`}</span>
         </KBtn>
+
         <KBtn
           className="w-[2.85rem] items-end justify-end pr-[4px] pb-[2px]"
           childrenClassName="items-end"
@@ -405,39 +589,79 @@ export const Keypad = () => {
         >
           shift
         </KBtn>
-        <KBtn>
+        <KBtn
+          className="flex flex-col items-center justify-center w-10 h-10 bg-blue-500 text-white rounded"
+          childrenClassName="flex flex-col items-center"
+        >
           <span className="block">Z</span>
         </KBtn>
-        <KBtn>
+
+        <KBtn
+          className="flex flex-col items-center justify-center w-10 h-10 bg-blue-500 text-white rounded"
+          childrenClassName="flex flex-col items-center"
+        >
           <span className="block">X</span>
         </KBtn>
-        <KBtn>
+
+        <KBtn
+          className="flex flex-col items-center justify-center w-10 h-10 bg-blue-500 text-white rounded"
+          childrenClassName="flex flex-col items-center"
+        >
           <span className="block">C</span>
         </KBtn>
-        <KBtn>
+
+        <KBtn
+          className="flex flex-col items-center justify-center w-10 h-10 bg-blue-500 text-white rounded"
+          childrenClassName="flex flex-col items-center"
+        >
           <span className="block">V</span>
         </KBtn>
-        <KBtn>
+
+        <KBtn
+          className="flex flex-col items-center justify-center w-10 h-10 bg-blue-500 text-white rounded"
+          childrenClassName="flex flex-col items-center"
+        >
           <span className="block">B</span>
         </KBtn>
-        <KBtn>
+
+        <KBtn
+          className="flex flex-col items-center justify-center w-10 h-10 bg-blue-500 text-white rounded"
+          childrenClassName="flex flex-col items-center"
+        >
           <span className="block">N</span>
         </KBtn>
-        <KBtn>
+
+        <KBtn
+          className="flex flex-col items-center justify-center w-10 h-10 bg-blue-500 text-white rounded"
+          childrenClassName="flex flex-col items-center"
+        >
           <span className="block">M</span>
         </KBtn>
-        <KBtn>
+
+        <KBtn
+          className="flex flex-col items-center justify-center w-10 h-10 bg-blue-500 text-white rounded"
+          childrenClassName="flex flex-col items-center"
+        >
           <span className="block">{`<`}</span>
           <span className="block">{`,`}</span>
         </KBtn>
-        <KBtn>
+
+        <KBtn
+          className="flex flex-col items-center justify-center w-10 h-10 bg-blue-500 text-white rounded"
+          childrenClassName="flex flex-col items-center"
+        >
           <span className="block">{`>`}</span>
           <span className="block">{`.`}</span>
-        </KBtn>{" "}
-        <KBtn>
+        </KBtn>
+
+        <KBtn
+          className="flex flex-col items-center justify-center w-10 h-10 bg-blue-500 text-white rounded"
+          childrenClassName="flex flex-col items-center"
+        >
           <span className="block">{`?`}</span>
           <span className="block">{`/`}</span>
         </KBtn>
+
         <KBtn
           className="w-[3.65rem] items-end justify-end pr-[4px] pb-[2px]"
           childrenClassName="items-end"
@@ -482,7 +706,13 @@ export const Keypad = () => {
             <span className="block">command</span>
           </div>
         </KBtn>
-        <KBtn className="w-[8.2rem]"></KBtn>
+        <KBtn
+          className="w-[8.2rem] bg-blue-500 text-white rounded flex items-center justify-center" // Main button styles
+          childrenClassName="flex flex-col items-center" // Styles for the children elements
+        >
+          <IconBrightnessDown className="h-[6px] w-[6px]" />
+          <span className="inline-block mt-1">F1</span>
+        </KBtn>
         <KBtn
           className="w-8"
           childrenClassName="h-full justify-between py-[4px]"
@@ -503,17 +733,25 @@ export const Keypad = () => {
           </div>
         </KBtn>
         <div className="w-[4.9rem] mt-[2px] h-6 p-[0.5px] rounded-[4px] flex flex-col justify-end items-center">
-          <KBtn className="w-6 h-3">
-            <IconCaretUpFilled className="h-[6px] w-[6px]" />
-          </KBtn>
           <div className="flex">
-            <KBtn className="w-6 h-3">
+            <KBtn
+              className="w-6 h-3"
+              childrenClassName="flex items-center justify-center"
+            >
               <IconCaretLeftFilled className="h-[6px] w-[6px]" />
             </KBtn>
-            <KBtn className="w-6 h-3">
+
+            <KBtn
+              className="w-6 h-3"
+              childrenClassName="flex items-center justify-center"
+            >
               <IconCaretDownFilled className="h-[6px] w-[6px]" />
             </KBtn>
-            <KBtn className="w-6 h-3">
+
+            <KBtn
+              className="w-6 h-3"
+              childrenClassName="flex items-center justify-center"
+            >
               <IconCaretRightFilled className="h-[6px] w-[6px]" />
             </KBtn>
           </div>
