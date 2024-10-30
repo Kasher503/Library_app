@@ -1,21 +1,21 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, Suspense } from "react"; // Import Suspense
 import { useSearchParams } from "next/navigation";
 import axios from "axios";
 import Bookpage from "../components/Bookpage";
 import Navbar from "../components/Navbar";
-import Loader from "../components/Loader"; // Import the Loader component
+import Loader from "../components/Loader";
 
 const Page = () => {
   const [books, setBooks] = useState([]);
-  const [loading, setLoading] = useState(true); // State for loading status
+  const [loading, setLoading] = useState(true);
   const searchParams = useSearchParams();
   const value = searchParams.get("value");
 
   useEffect(() => {
     const fetchBooks = async () => {
       if (value) {
-        setLoading(true); // Set loading to true when starting fetch
+        setLoading(true);
         try {
           const response = await axios.get(
             `https://www.googleapis.com/books/v1/volumes?q=${encodeURIComponent(
@@ -26,7 +26,7 @@ const Page = () => {
         } catch (error) {
           console.error("Error fetching the books:", error);
         } finally {
-          setLoading(false); // Set loading to false after fetch completes
+          setLoading(false);
         }
       }
     };
@@ -42,13 +42,16 @@ const Page = () => {
           Search Results for: "{value}"
         </span>
       </h1>
-      {loading ? (
-        <Loader /> // Show Loader component while loading
-      ) : (
-        <Bookpage books={books} /> // Show Bookpage component after loading
-      )}
+      {loading ? <Loader /> : <Bookpage books={books} />}
     </div>
   );
 };
 
-export default Page;
+// Wrap the Page component in Suspense
+const SuspenseWrapper = () => (
+  <Suspense fallback={<Loader />}>
+    <Page />
+  </Suspense>
+);
+
+export default SuspenseWrapper;
