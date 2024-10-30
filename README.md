@@ -1,36 +1,37 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# This is a Library app which is completly responsive using next app 
 
-## Getting Started
+In this app you can search any type of book 
 
-First, run the development server:
+You can search read download the book
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+The are some buildin categories like Famous Books , Thriller , Horror and suspence , Sports , Programming.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The api I am using here is Google Book APi
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+The dependencies I am using here are :
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+"@gsap/react": "^2.1.1",
+    "@react-three/drei": "^9.114.6",
+    "@react-three/fiber": "^8.17.10",
+    "@tabler/icons-react": "^3.20.0",
+    "@tsparticles/engine": "^3.5.0",
+    "@tsparticles/react": "^3.0.0",
+    "@tsparticles/slim": "^3.5.0",
+    "axios": "^1.7.7",
+    "clsx": "^2.1.1",
+    "framer-motion": "^11.11.9",
+    "gsap": "^3.12.5",
+    "next": "14.2.15",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-icons": "^5.3.0",
+    "simplex-noise": "^4.0.3",
+    "tailwind-merge": "^2.5.4",
+    "three": "^0.169.0",
+    "three-globe": "^2.33.0"
 
-## Learn More
+The node version I am using here is :  v20.5.0
 
-To learn more about Next.js, take a look at the following resources:
+# Here its live demo : 
+https://library-app-z3ch.vercel.app/
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
